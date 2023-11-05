@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400&family=Lato:wght@300;400;700;900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:#EBEBEB;
+    overflow-y: hidden;
+}
+.hero{
+    padding:0px 40px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: 'Inter Tight', sans-serif;
+
+}
+
+img{
+    width: 25vh;
+    padding-right: 30px;
+}
+header{
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+nav .links ul li a::after{
+   
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #000;
+        transition:  width 0.5s ease-in-out;
+}
+nav .links ul li a:hover::after{
+    width: 100%;
+}
+
+
+button{
+    padding: 12px 20px;
+    border: none;
+    background: #615fe2;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px 0px #615fe2;
+    transition: 1.5s ease-in-out all ;
+    
+}
+button:hover{
+    transform: translateY(-5px);
+    color: black;
+
+}
+
+
+/* this is main section */
+main{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+    gap: 50px;
+   
+    
+}
+.left-side{
+    width: 48%;
+    height: fit-content;
+    margin-left: 30px;
+}
+.left-side img{
+    width:15vh;
+    padding-bottom: 20px;
+    
+}
+.left-side h1{
+    font-size: 8vh;
+    text-align:start;
+    padding-bottom: 30px;
+}
+.left-side p{
+    text-align:start;
+    font-size: 3vh;
+    padding-bottom: 30px;
+    padding-right: 130px;
+    font-family: 'Inter Tight', sans-serif;
+    line-height: 40px;
+    
+}
+
+.left-side h1 span{
+    color: #E46FB6;
+    opacity: 0.7;
+}
+.left-footer{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-footer a{
+    font-family: 'Inter Tight', sans-serif;
+}
+.left-footer a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.5s ease-in-out;
+}
+.left-footer a:hover::after{
+    width: 100%;
+}
+.play-btn{
+    padding: 15px 20px ;
+    background: #615fe2;
+    border-radius: 49%;
+    color: #fff;
+    transition: 1s ease-in-out all;
+}
+.play-btn i{
+    font-size: 3vh;
+}
+
+.play-btn:hover{
+    transform: scale(1.1);
+}
+
+.right-side{
+    width: 48%;
+    
+}
+
+.right-side img{
+    width:100%;
+    animation: move  infinite 4s ease-in-out;
+}
+
+@keyframes move {
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-25px);
+    }
+}
